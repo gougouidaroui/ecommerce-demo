@@ -1,0 +1,96 @@
+/* src/styles/nord.css - COPY THIS! */
+:root {
+  /* Nord 0 - Polar Night */
+  --nord-0:  #2e3440;
+  --nord-1:  #3b4252;
+  --nord-2:  #434c5e;
+  --nord-3:  #4c566a;
+  
+  /* Nord 4-6 - Snow Storm */
+  --nord-4:  #d8dee9;
+  --nord-5:  #e5e9f0;
+  --nord-6:  #eceff4;
+  
+  /* Nord 7-9 - Frost */
+  --nord-7:  #8fbcbb;
+  --nord-8:  #88c0d0;
+  --nord-9:  #81a1c1;
+  
+  /* Nord 10-15 - Aurora */
+  --nord-10: #bf616a;  /* Red */
+  --nord-11: #d08770;  /* Orange */
+  --nord-12: #ebcb8b;  /* Yellow */
+  --nord-13: #a3be8c;  /* Green */
+  --nord-14: #b48ead;  /* Purple */
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--nord-6);
+  color: var(--nord-0);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Components */
+.bg-nord-0 { background-color: var(--nord-0); }
+.bg-nord-1 { background-color: var(--nord-1); }
+.bg-nord-2 { background-color: var(--nord-2); }
+.bg-nord-3 { background-color: var(--nord-3); }
+.bg-nord-4 { background-color: var(--nord-4); }
+.bg-nord-5 { background-color: var(--nord-5); }
+.bg-nord-6 { background-color: var(--nord-6); }
+
+.text-nord-0 { color: var(--nord-0); }
+.text-nord-1 { color: var(--nord-1); }
+.text-nord-9 { color: var(--nord-9); }
+.text-nord-10 { color: var(--nord-10); }
+.text-nord-12 { color: var(--nord-12); }
+.text-nord-13 { color: var(--nord-13); }
+
+.border-nord-2 { border-color: var(--nord-2); }
+.border-nord-3 { border-color: var(--nord-3); }
+
+.btn-primary { 
+  background-color: var(--nord-9); 
+  color: var(--nord-0); 
+  transition: all 0.2s;
+}
+.btn-primary:hover { 
+  background-color: var(--nord-8); 
+  transform: translateY(-1px);
+}
+
+.btn-success { 
+  background-color: var(--nord-13); 
+  color: var(--nord-0); 
+}
+.btn-success:hover { 
+  background-color: #98b689; 
+}
+
+.btn-danger { 
+  background-color: var(--nord-10); 
+  color: var(--nord-6); 
+}
+.btn-danger:hover { 
+  background-color: #ae5a60; 
+}
+
+.shadow-nord {
+  box-shadow: 0 4px 6px -1px rgba(46, 52, 64, 0.1), 0 2px 4px -1px rgba(46, 52, 64, 0.06);
+}
+
+.rounded-nord { border-radius: 8px; }
+
+/* Admin Dark Theme */
+.admin-sidebar { 
+  background-color: var(--nord-1); 
+  color: var(--nord-6); 
+}
+.admin-sidebar a:hover { 
+  background-color: var(--nord-2); 
+}
